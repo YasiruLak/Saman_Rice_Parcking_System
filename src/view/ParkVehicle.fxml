@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="contextInParking" prefHeight="601.0" prefWidth="756.0" style="-fx-background-color: #36415c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParkVehicleController">
+   <children>
+      <TableView fx:id="tblInParking" layoutX="21.0" layoutY="169.0" prefHeight="416.0" prefWidth="718.0">
+        <columns>
+          <TableColumn fx:id="colVehicleNumber" prefWidth="182.0" text="Vehicle Number" />
+          <TableColumn fx:id="colVehicleType" prefWidth="136.0" text="Vehicle Type" />
+            <TableColumn fx:id="colParkingSlot" prefWidth="120.0" text="Parking Slot" />
+            <TableColumn fx:id="colParkedTime" prefWidth="279.0" text="Parked Time" />
+        </columns>
+      </TableView>
+      <Label layoutX="253.0" layoutY="83.0" text="Parked Vehicle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

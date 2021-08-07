@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="detailPageContext" prefHeight="700.0" prefWidth="778.0" style="-fx-background-color: #36415c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetailPageController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="482.0" layoutY="32.0" onAction="#loadDriver" style="-fx-background-color: #3b71ed; -fx-background-radius: 15;" text="Add Driver" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="326.0" layoutY="32.0" onAction="#loadVehicle" style="-fx-background-color: #3b71ed; -fx-background-radius: 15;" text="Add Vehicle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnLogout" buttonType="RAISED" layoutX="631.0" layoutY="32.0" onAction="#loadManagement" prefHeight="31.0" prefWidth="92.0" style="-fx-background-color: #fa8d39; -fx-background-radius: 15;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ComboBox fx:id="cmbDetailOption" layoutX="34.0" layoutY="32.0" prefHeight="39.0" prefWidth="189.0" promptText="Select Option" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <AnchorPane fx:id="windowContext" layoutX="11.0" layoutY="85.0" prefHeight="601.0" prefWidth="756.0" />
+   </children>
+</AnchorPane>
